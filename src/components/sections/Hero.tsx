@@ -1,5 +1,6 @@
 import { getPayloadClient } from '@/lib/payload';
 import { Page } from '@/modules/admin/payload-types';
+import style from './Hero.module.scss';
 
 export default async function Hero() {
   const payload = await getPayloadClient();
@@ -18,7 +19,7 @@ export default async function Hero() {
   return (
     <section>
       <div>
-        <h1>{data.hero?.title || 'Заголовок по умолчанию'}</h1>
+        <h1 className={style.title}>{data.hero?.title || 'Заголовок по умолчанию'}</h1>
         <p>{data.hero?.subtitle}</p>
         <button>{data.hero?.ctaText || 'Начать работу'}</button>
       </div>

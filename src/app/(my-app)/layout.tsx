@@ -1,3 +1,5 @@
+import '@/styles/globals.scss';
+
 import Header from '@/components/layout/Header';
 import type { Metadata } from 'next';
 
