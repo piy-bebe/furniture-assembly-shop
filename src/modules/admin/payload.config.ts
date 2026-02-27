@@ -7,6 +7,7 @@ import sharp from 'sharp';
 import { UsersCollection } from './collections/user';
 import { MediaCollection } from './collections/media';
 import { Pages } from './collections/Pages';
+import { HeaderGlobal } from './globals/Headers';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -19,6 +20,7 @@ export default buildConfig({
     },
   },
   collections: [UsersCollection, MediaCollection, Pages],
+  globals: [HeaderGlobal],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
