@@ -30,6 +30,11 @@
   color: black;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.link:hover {
+  color: #b88e2f;
 }
 
 .phone {
