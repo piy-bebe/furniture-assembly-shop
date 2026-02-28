@@ -1,0 +1,50 @@
+.services {
+  padding: 120px 0;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 400px;
+  height: 550px; /* Фиксированная высота для всех картинок */
+  border-radius: 12px;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
