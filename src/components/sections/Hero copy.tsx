@@ -16,5 +16,13 @@ export default async function Hero() {
 
   if (!data) return <section>Данные не найдены</section>;
 
-  return <section className={style.hero}></section>;
+  return (
+    <section className={style.hero}>
+      {/* <div>
+        <h1 className={style.title}>{data.hero?.title || 'Заголовок по умолчанию'}</h1>
+        <p>{data.hero?.subtitle}</p>
+        <button>{data.hero?.ctaText || 'Начать работу'}</button>
+      </div> */}
+    </section>
+  );
 }
