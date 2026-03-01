@@ -1,0 +1,42 @@
+.guarantee {
+  box-sizing: border-box;
+  padding: 120px 0 0 0;
+
+  width: 100%;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px 0;
+  margin: 0 auto;
+  max-width: 1680px;
+}
+
+.card {
+  padding: 40px 40px;
+  background-color: rgb(255, 243, 227);
+
+  line-height: 25px;
+  border-radius: 12px;
+  max-width: 320px;
+
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  border: 1px solid #b88e2f;
+}
