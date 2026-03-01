@@ -1,4 +1,5 @@
 import Feedback from '@/components/sections/Feedback';
+import Footer from '@/components/sections/Footer';
 import Guarantee from '@/components/sections/Guarantee';
 import Hero from '@/components/sections/Hero';
 import Reliability from '@/components/sections/Reliability';
@@ -14,6 +15,7 @@ export default function Home() {
       <Guarantee />
       <Reliability />
       <Feedback />
+      <Footer />
     </>
   );
 }
