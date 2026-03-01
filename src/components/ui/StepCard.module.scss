@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+
+  max-width: 400px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #b88e2f;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+
+  line-height: 25px;
+}
