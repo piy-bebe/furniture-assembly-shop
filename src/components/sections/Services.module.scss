@@ -13,13 +13,14 @@
 }
 
 .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 70px 40px;
   justify-content: space-between;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .card {
@@ -41,8 +42,9 @@
 
 .imageWrapper {
   position: relative;
-  width: 400px;
-  height: 550px; /* Фиксированная высота для всех картинок */
+  max-width: 400px;
+  width: 100%;
+  aspect-ratio: 400 / 550; /* Соотношение ширины к высоте как в макете */
   border-radius: 12px;
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -52,4 +54,21 @@
 
 .image {
   object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .imageWrapper {
+    margin: 0 auto;
+  }
 }
