@@ -20,7 +20,7 @@ export default async function Hero() {
     <section className={style.hero}>
       <div className={style.wrap}>
         <div className={style.block}>
-          <p className={style.time}>Ежедневно с 10.00 до 18.00</p>
+          <p className={style.time}>Работаем с 09:00 до 19:00</p>
           <h1 className={style.title}>Сборка мебели</h1>
           <p className={style.description}>
             Оплата по безналичному расчету.

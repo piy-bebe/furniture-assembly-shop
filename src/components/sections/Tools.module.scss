@@ -1,0 +1,35 @@
+.container {
+  box-sizing: border-box;
+  padding: 120px 0 0 0;
+
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 50px;
+  margin: 0 auto;
+  max-width: 1680px;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 250px;
+  height: 180px; /* Фиксированная высота для всех картинок */
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
+}

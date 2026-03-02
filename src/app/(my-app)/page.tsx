@@ -4,6 +4,7 @@ import Guarantee from '@/components/sections/Guarantee';
 import Hero from '@/components/sections/Hero';
 import Reliability from '@/components/sections/Reliability';
 import Services from '@/components/sections/Services';
+import Tools from '@/components/sections/Tools';
 import Workflow from '@/components/sections/Workflow';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Workflow />
       <Guarantee />
       <Reliability />
+      <Tools />
       <Feedback />
       <Footer />
     </>

@@ -7,10 +7,10 @@ export default function Reliability() {
       <div className={style.wrap}>
         <div className={style.left}>
           <div>
-            <h3 className={style.title}>Мы сотрудничаем только с проверенными мастерами</h3>
+            <h3 className={style.title}>У нас работают только профессиональные мастера</h3>
             <p className={style.text}>
-              Все мастера имеют опыт работы от 3х лет и более и весь необходимый инструмент для сборки мебели.
-              Кроме того, после каждого заказа мы получаем обратную связь от клиентов для принятия необходимых
+              Все мастера имеют большой опыт работы и весь необходимый инструмент для сборки мебели. Кроме того,
+              после каждого заказа оператор связывается для обратной связи от клиентов и принятия необходимых
               корректировок.
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function Reliability() {
             <p className={style.description}>Выполненных заказов</p>
           </div>
           <div className={style.row}>
-            <h3 className={style.result}>+800</h3>
+            <h3 className={style.result}>+10</h3>
             <p className={style.description}>Мастеров</p>
           </div>
           <div className={style.row}>

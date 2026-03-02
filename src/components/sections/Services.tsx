@@ -15,8 +15,23 @@ export default async function Services() {
     },
     {
       id: 3,
-      title: 'Медицинская и лабораторная мебель',
+      title: 'Медицинская мебель',
       image: '/images/services/medical.jpg',
+    },
+    {
+      id: 4,
+      title: 'Лабораторная мебель',
+      image: '/images/services/laboratory.jpg',
+    },
+    {
+      id: 5,
+      title: 'Торговая мебель',
+      image: '/images/services/shop.jpg',
+    },
+    {
+      id: 6,
+      title: 'Складская мебель',
+      image: '/images/services/rack.jpg',
     },
   ];
 
