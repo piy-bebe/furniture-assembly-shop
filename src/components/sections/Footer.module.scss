@@ -5,6 +5,7 @@
 .wrap {
   display: flex;
   justify-content: center;
+  gap: 25px;
   margin: 0 auto;
   max-width: 1820px;
   width: 100%;
@@ -12,5 +13,17 @@
   border-top: 2px solid #e4e4e4;
   font-family: 'Montserrat', sans-serif;
   color: #9c9c9c;
-  padding: 60px 0;
+  padding: 45px 0;
+}
+
+.buttonText {
+  border: 0;
+  background: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.buttonText:hover {
+  color: #b88e2f;
+  cursor: pointer;
 }
