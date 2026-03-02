@@ -13,10 +13,10 @@ export default async function Tools() {
           <Image className={style.image} src="/images/tools/dewalt.svg" fill alt="icon" />
         </div>
         <div className={style.imageWrapper}>
-          <Image className={style.image} src="/images/tools/dexter.svg" fill alt="icon" />
+          <Image className={style.image} src="/images/tools/hilti.svg" fill alt="icon" />
         </div>
         <div className={style.imageWrapper}>
-          <Image className={style.image} src="/images/tools/festool.svg" fill alt="icon" />
+          <Image className={style.image} src="/images/tools/milwaukee.svg" fill alt="icon" />
         </div>
         <div className={style.imageWrapper}>
           <Image className={style.image} src="/images/tools/makita.svg" fill alt="icon" />

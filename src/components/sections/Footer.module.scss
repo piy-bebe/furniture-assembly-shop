@@ -16,14 +16,13 @@
   padding: 45px 0;
 }
 
-.buttonText {
-  border: 0;
-  background: 0;
+.link {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
+  text-decoration: none;
 }
 
-.buttonText:hover {
+.link:hover {
   color: #b88e2f;
   cursor: pointer;
 }
