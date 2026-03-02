@@ -1,13 +1,14 @@
 .workflow {
-  padding: 120px 0 0 0;
+  padding: 120px 20px 0 20px;
 }
 .wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px 0;
+  gap: 60px 60px;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .header {
@@ -18,4 +19,17 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 46px;
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
