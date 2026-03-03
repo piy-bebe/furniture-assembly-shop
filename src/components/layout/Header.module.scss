@@ -1,6 +1,6 @@
 .header {
+  position: relative;
 }
-
 .wrap {
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@
 .contact {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px 20px;
   margin-right: 40px;
 }
 .phone {
@@ -112,5 +112,129 @@
     left: 0;
     transform: translateX(0);
     margin-left: 40px;
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  flex-shrink: 0;
+}
+
+.burgerLine {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    width 0.3s ease;
+}
+
+.burgerOpen .burgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burgerOpen .burgerLine:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.burgerOpen .burgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile menu ── */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100dvh;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 30px 40px;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobileMenuOpen {
+  transform: translateX(0);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.mobileLink {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.mobileLink:hover {
+  color: #b88e2f;
+}
+
+.mobileContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ── Overlay ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* В существующий @media (max-width: 768px) добавить: */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .logo {
+    display: block;
+    margin-left: 20px;
+  }
+  .wrap {
+    padding: 16px 0;
   }
 }
