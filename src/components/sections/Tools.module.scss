@@ -11,10 +11,18 @@
 
 .wrap {
   display: flex;
+
   justify-content: space-between;
   gap: 0 50px;
   margin: 0 auto;
   max-width: 1680px;
+
+  padding: 0 24px;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .header {
