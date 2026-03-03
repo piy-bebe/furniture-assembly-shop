@@ -9,5 +9,5 @@ export default async function Header() {
     slug: 'header',
   });
 
-  return <HeaderClient logoText={headerData.logoText} phoneNumber={headerData.phoneNumber} />;
+  return <HeaderClient logoText={headerData.logoText ?? ''} phoneNumber={headerData.phoneNumber ?? ''} />;
 }

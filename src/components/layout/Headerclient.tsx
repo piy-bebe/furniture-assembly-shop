@@ -5,8 +5,8 @@ import Image from 'next/image';
 import style from './Header.module.scss';
 
 interface HeaderClientProps {
-  logoText: string;
-  phoneNumber: string;
+  logoText?: string | null;
+  phoneNumber?: string | null;
 }
 
 const navLinks = [
@@ -32,7 +32,7 @@ export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProp
   return (
     <header className={style.header}>
       <div className={style.wrap}>
-        <div className={style.logo}>{logoText}</div>
+        <div className={style.logo}>{logoText ?? ''}</div>
 
         <nav className={style.nav}>
           {navLinks.map(({ href, label }) => (
@@ -43,7 +43,7 @@ export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProp
         </nav>
 
         <div className={style.contact}>
-          <p className={style.phone}>{phoneNumber}</p>
+          <p className={style.phone}>{phoneNumber ?? ''}</p>
           <div className={style.socials}>
             <div className={style.imageWrapper}>
               <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
@@ -82,7 +82,7 @@ export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProp
         </nav>
 
         <div className={style.mobileContact}>
-          <p className={style.phone}>{phoneNumber}</p>
+          <p className={style.phone}>{phoneNumber ?? ''}</p>
           <div className={style.socials}>
             <div className={style.imageWrapper}>
               <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
