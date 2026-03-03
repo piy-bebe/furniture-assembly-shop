@@ -9,6 +9,10 @@
   @media (max-width: 768px) {
     max-height: 80vh;
   }
+
+  @media (max-width: 425px) {
+    max-height: 60vh;
+  }
 }
 
 .wrap {
@@ -20,6 +24,10 @@
 
   @media (max-width: 768px) {
     padding: 0 28px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0 16px;
   }
 }
 
@@ -36,6 +44,10 @@
     margin: 0 auto;
 
     padding: 40px 40px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 30px 20px;
   }
 }
 
@@ -97,6 +109,10 @@
 
   font-family: 'Montserrat', sans-serif;
   transition: 0.3s ease;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 }
 
 .button:hover {
