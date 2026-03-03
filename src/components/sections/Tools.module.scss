@@ -3,6 +3,10 @@
   padding: 120px 0 0 0;
 
   width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 60px 16px 0 16px;
+  }
 }
 
 .wrap {
@@ -21,6 +25,10 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 46px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 
 .imageWrapper {

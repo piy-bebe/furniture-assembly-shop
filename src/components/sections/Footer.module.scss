@@ -1,5 +1,10 @@
 .container {
   margin-top: 120px;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    padding: 60px 16px 0 16px;
+  }
 }
 
 .wrap {

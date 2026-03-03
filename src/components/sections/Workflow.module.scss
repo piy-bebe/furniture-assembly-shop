@@ -1,5 +1,9 @@
 .workflow {
   padding: 120px 20px 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 60px 16px 0 16px;
+  }
 }
 .wrap {
   display: grid;
@@ -18,6 +22,10 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 46px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 
 @media (max-width: 1024px) {
