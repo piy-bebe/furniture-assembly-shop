@@ -1,6 +1,7 @@
 import { getPayloadClient } from '@/lib/payload';
 import { Header as HeaderType } from '@/modules/admin/payload-types';
 import style from './Header.module.scss';
+import Image from 'next/image';
 
 export default async function Header() {
   const payload = await getPayloadClient();
@@ -30,7 +31,20 @@ export default async function Header() {
             Отзывы
           </a>
         </nav>
-        <p className={style.phone}>{headerData.phoneNumber}</p>
+        <div className={style.contact}>
+          <p className={style.phone}>{headerData.phoneNumber}</p>
+          <div className={style.socials}>
+            <div className={style.imageWrapper}>
+              <Image className={style.image} src="/images/header/telegram.svg" fill alt="icon" />
+            </div>
+            <div className={style.imageWrapper}>
+              <Image className={style.image} src="/images/header/max.svg" fill alt="icon" />
+            </div>
+            <div className={style.imageWrapper}>
+              <Image className={style.image} src="/images/header/whatsapp.svg" fill alt="icon" />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

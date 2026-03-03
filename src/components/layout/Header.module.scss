@@ -37,6 +37,12 @@
   color: #b88e2f;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+}
 .phone {
   margin: 0;
 
@@ -44,6 +50,21 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: bold;
+}
 
-  margin-right: 40px;
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 30px;
+  height: 30px; /* Фиксированная высота для всех картинок */
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
 }
