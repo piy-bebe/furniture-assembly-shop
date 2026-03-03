@@ -19,12 +19,18 @@
   font-family: 'Montserrat', sans-serif;
   color: #9c9c9c;
   padding: 45px 0;
+
+  @media (max-width: 556px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .link {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
   text-decoration: none;
+  text-align: center;
 }
 
 .link:hover {
