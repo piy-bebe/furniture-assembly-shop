@@ -5,6 +5,10 @@
   width: 100%;
   max-height: 800px;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    max-height: 80vh;
+  }
 }
 
 .wrap {
@@ -13,6 +17,10 @@
   align-items: center;
   position: relative;
   height: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 28px;
+  }
 }
 
 .block {
@@ -22,6 +30,13 @@
   margin-right: 80px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin: 0 auto;
+
+    padding: 40px 40px;
+  }
 }
 
 .title {
@@ -33,6 +48,14 @@
   color: #b88e2f;
   font-size: 46px;
   font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 26px;
+  }
 }
 
 .time {
@@ -42,6 +65,10 @@
 
   color: black;
   font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
 }
 
 .description {
@@ -53,6 +80,10 @@
   font-family: 'Montserrat', sans-serif;
 
   line-height: 25px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
 }
 
 .button {
