@@ -33,3 +33,15 @@
 .image {
   object-fit: contain;
 }
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    font-size: 28px;
+  }
+}
