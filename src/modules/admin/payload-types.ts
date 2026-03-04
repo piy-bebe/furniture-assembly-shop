@@ -395,6 +395,7 @@ export interface Header {
   id: number;
   logoText: string;
   phoneNumber?: string | null;
+  email?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -405,6 +406,7 @@ export interface Header {
 export interface HeaderSelect<T extends boolean = true> {
   logoText?: T;
   phoneNumber?: T;
+  email?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

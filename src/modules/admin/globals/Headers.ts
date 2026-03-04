@@ -17,5 +17,14 @@ export const HeaderGlobal: GlobalConfig = {
       type: 'text',
       label: 'Телефон в шапке',
     },
+    {
+      name: 'email',
+      type: 'email', // Используем тип email для валидации
+      label: 'Email в шапке',
+      required: false, // Делаем необязательным, если нужно
+      admin: {
+        placeholder: 'example@mail.com', // Подсказка в админке
+      },
+    },
   ],
 };

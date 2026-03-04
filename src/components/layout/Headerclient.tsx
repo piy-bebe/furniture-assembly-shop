@@ -7,6 +7,7 @@ import style from './Header.module.scss';
 interface HeaderClientProps {
   logoText?: string | null;
   phoneNumber?: string | null;
+  email?: string | null;
 }
 
 const navLinks = [
@@ -16,7 +17,7 @@ const navLinks = [
   { href: '#about', label: 'О нас' },
 ];
 
-export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProps) {
+export default function HeaderClient({ logoText, phoneNumber, email }: HeaderClientProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -42,7 +43,10 @@ export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProp
         </nav>
 
         <div className={style.contact}>
-          <p className={style.phone}>{phoneNumber ?? ''}</p>
+          <div className={style.group}>
+            <p className={style.phone}>{phoneNumber ?? ''}</p>
+            <p className={style.email}>{email ?? ''}</p>
+          </div>
           <div className={style.socials}>
             <div className={style.imageWrapper}>
               <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
@@ -82,6 +86,7 @@ export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProp
 
         <div className={style.mobileContact}>
           <p className={style.phone}>{phoneNumber ?? ''}</p>
+          <p className={style.email}>{email ?? ''}</p>
           <div className={style.socials}>
             <div className={style.imageWrapper}>
               <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
