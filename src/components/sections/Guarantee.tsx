@@ -2,7 +2,7 @@ import style from './Guarantee.module.scss';
 
 export default function Guarantee() {
   return (
-    <section className={style.guarantee}>
+    <section className={style.guarantee} id="guarantee">
       <h2 className={style.header}>Гарантия</h2>
 
       <div className={style.wrap}>

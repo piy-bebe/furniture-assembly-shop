@@ -2,7 +2,7 @@ import style from './Reliability.module.scss';
 
 export default function Reliability() {
   return (
-    <section className={style.container}>
+    <section className={style.container} id="about">
       <h2 className={style.header}>Эксперты своего дела</h2>
       <div className={style.wrap}>
         <div className={style.left}>

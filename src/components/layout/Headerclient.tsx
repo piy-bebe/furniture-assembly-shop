@@ -10,11 +10,10 @@ interface HeaderClientProps {
 }
 
 const navLinks = [
-  { href: '#work', label: 'Как работаем' },
+  { href: '#services', label: 'Услуги' },
+  { href: '#work', label: 'Как мы работаем' },
   { href: '#guarantee', label: 'Гарантия' },
-  { href: '#masters', label: 'Мастера' },
-  { href: '#cases', label: 'Кейсы' },
-  { href: '#reviews', label: 'Отзывы' },
+  { href: '#about', label: 'О нас' },
 ];
 
 export default function HeaderClient({ logoText, phoneNumber }: HeaderClientProps) {

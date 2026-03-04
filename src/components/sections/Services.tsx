@@ -36,7 +36,7 @@ export default async function Services() {
   ];
 
   return (
-    <section className={style.services}>
+    <section className={style.services} id="services">
       <h2 className={style.header}>Услуги</h2>
       <div className={style.wrap}>
         {services.map((service) => (

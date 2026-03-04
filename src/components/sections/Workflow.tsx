@@ -33,7 +33,7 @@ export default function Workflow() {
   ];
 
   return (
-    <section className={style.workflow}>
+    <section className={style.workflow} id="work">
       <h2 className={style.header}>Как мы работаем</h2>
       <div className={style.wrap}>
         {steps.map((step, index) => (
