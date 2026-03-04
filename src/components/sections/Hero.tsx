@@ -27,7 +27,9 @@ export default async function Hero() {
             <br />
             Подготовим коммерческое предложение в течение 1 часа.
           </p>
-          <button className={style.button}>Рассчитать стоимость работ</button>
+          <a className={style.button} href="#feedback">
+            Рассчитать стоимость работ
+          </a>
         </div>
       </div>
     </section>

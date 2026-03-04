@@ -55,7 +55,7 @@ export default function Feedback() {
   };
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id="feedback">
       <h2 className={style.header}>Бесплатный расчёт за 5 минут</h2>
       <div className={style.wrap}>
         <form className={style.form} onSubmit={handleSubmit}>

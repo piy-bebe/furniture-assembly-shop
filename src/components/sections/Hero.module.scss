@@ -99,6 +99,9 @@
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 50px;
 
@@ -106,8 +109,10 @@
 
   background-color: #b88e2f;
   color: white;
+  text-decoration: none;
 
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   transition: 0.3s ease;
 
   @media (max-width: 425px) {
