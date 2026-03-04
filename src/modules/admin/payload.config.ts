@@ -8,6 +8,7 @@ import { UsersCollection } from './collections/user';
 import { MediaCollection } from './collections/media';
 import { Pages } from './collections/Pages';
 import { HeaderGlobal } from './globals/Headers';
+import Leads from './collections/Leads';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -19,7 +20,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [UsersCollection, MediaCollection, Pages],
+  collections: [UsersCollection, MediaCollection, Pages, Leads],
   globals: [HeaderGlobal],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
