@@ -43,8 +43,8 @@ export default function Reliability() {
             <p className={style.description}>Мастеров</p>
           </div>
           <div className={style.row}>
-            <h3 className={style.result}>+200</h3>
-            <p className={style.description}>Городов работы</p>
+            <h3 className={style.result}>Работаем</h3>
+            <p className={style.description}>Москва и Подмосковье</p>
           </div>
         </div>
       </div>

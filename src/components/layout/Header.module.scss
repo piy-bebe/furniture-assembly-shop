@@ -8,14 +8,43 @@
 
   max-width: 1920px;
   margin: 0 auto;
-  padding: 27px 0;
+  padding: 10px 0;
 }
 
-.logo {
+.logoGroup {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 40px;
+
+  @media (max-width: 1176px) {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+}
+.logoText {
   color: black;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 40px;
+  margin-left: 15px;
+
+  @media (max-width: 1176px) {
+    font-size: 18px;
+    max-width: 90px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+.logo {
+  object-fit: contain;
 }
 
 .nav {
@@ -42,6 +71,10 @@
   align-items: center;
   gap: 10px 20px;
   margin-right: 40px;
+
+  @media (max-width: 1176px) {
+    margin-right: 10px;
+  }
 }
 
 .group {
@@ -85,7 +118,7 @@
 
 @media screen and (max-width: 1312px) {
   .wrap {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .nav {
@@ -111,21 +144,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .logo {
-    display: none;
-  }
-
   .contact {
     margin-right: 40px;
   }
 
   .nav {
     display: flex;
-    gap: 30px;
+    gap: 24px;
     position: relative;
     left: 0;
     transform: translateX(0);
-    margin-left: 40px;
+    margin-left: 0px;
   }
 }
 
@@ -244,11 +273,8 @@
   .contact {
     display: none;
   }
-  .logo {
-    display: block;
-    margin-left: 20px;
-  }
+
   .wrap {
-    padding: 16px 0;
+    padding: 10px 0;
   }
 }

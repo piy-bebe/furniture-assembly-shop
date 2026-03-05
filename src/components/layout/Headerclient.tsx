@@ -32,7 +32,12 @@ export default function HeaderClient({ logoText, phoneNumber, email }: HeaderCli
   return (
     <header className={style.header}>
       <div className={style.wrap}>
-        <div className={style.logo}>{logoText ?? ''}</div>
+        <div className={style.logoGroup}>
+          <div className={style.logoImage}>
+            <Image className={style.logo} src="/logo.png" fill alt="logo" />
+          </div>
+          <div className={style.logoText}>{logoText ?? ''}</div>
+        </div>
 
         <nav className={style.nav}>
           {navLinks.map(({ href, label }) => (
