@@ -1,9 +1,17 @@
+import { revalidatePath } from 'next/cache';
 import { GlobalConfig } from 'payload';
 
 export const HeaderGlobal: GlobalConfig = {
   slug: 'header',
   access: {
     read: () => true,
+  },
+  hooks: {
+    afterChange: [
+      () => {
+        revalidatePath('/', 'layout');
+      },
+    ],
   },
   fields: [
     {
@@ -19,11 +27,11 @@ export const HeaderGlobal: GlobalConfig = {
     },
     {
       name: 'email',
-      type: 'email', // Используем тип email для валидации
+      type: 'email',
       label: 'Email в шапке',
-      required: false, // Делаем необязательным, если нужно
+      required: false,
       admin: {
-        placeholder: 'example@mail.com', // Подсказка в админке
+        placeholder: 'example@mail.com',
       },
     },
   ],
