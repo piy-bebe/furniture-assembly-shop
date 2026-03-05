@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <div className={style.container}>
       <div className={style.wrap}>
-        <a className={style.link} href="/docs/details.pdf" target="_blank">
+        <a className={style.link} href="/docs/details.pdf" target="_blank" rel="noopener noreferrer">
           Реквизиты компании
         </a>
-        <a className={style.link} href="/docs/privacy_policy.pdf" target="_blank">
+        <a className={style.link} href="/docs/privacy_policy.pdf" target="_blank" rel="noopener noreferrer">
           Политика конфиденциальности
         </a>
       </div>

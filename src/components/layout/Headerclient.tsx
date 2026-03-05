@@ -48,15 +48,25 @@ export default function HeaderClient({ logoText, phoneNumber, email }: HeaderCli
             <p className={style.email}>{email ?? ''}</p>
           </div>
           <div className={style.socials}>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
-            </div>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/max.svg" fill alt="Max" />
-            </div>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/whatsapp.svg" fill alt="WhatsApp" />
-            </div>
+            <a href="https://t.me/FKazihanov" target="_blank" rel="noopener noreferrer">
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
+              </div>
+            </a>
+            <a
+              href="https://max.ru/u/f9LHodD0cOK3ikbD82tqMrG53hYtLWmkRoj_LTWDdC-IRBQGspjQ3sw-nFo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/max.svg" fill alt="Max" />
+              </div>
+            </a>
+            <a href="https://wa.me/79998337970" target="_blank" rel="noopener noreferrer">
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/whatsapp.svg" fill alt="WhatsApp" />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -88,15 +98,25 @@ export default function HeaderClient({ logoText, phoneNumber, email }: HeaderCli
           <p className={style.phone}>{phoneNumber ?? ''}</p>
           <p className={style.email}>{email ?? ''}</p>
           <div className={style.socials}>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
-            </div>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/max.svg" fill alt="Max" />
-            </div>
-            <div className={style.imageWrapper}>
-              <Image className={style.image} src="/images/header/whatsapp.svg" fill alt="WhatsApp" />
-            </div>
+            <a href="https://t.me/FKazihanov" target="_blank" rel="noopener noreferrer">
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/telegram.svg" fill alt="Telegram" />
+              </div>
+            </a>
+            <a
+              href="https://max.ru/u/f9LHodD0cOK3ikbD82tqMrG53hYtLWmkRoj_LTWDdC-IRBQGspjQ3sw-nFo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/max.svg" fill alt="Max" />
+              </div>
+            </a>
+            <a href="https://wa.me/79998337970" target="_blank" rel="noopener noreferrer">
+              <div className={style.imageWrapper}>
+                <Image className={style.image} src="/images/header/whatsapp.svg" fill alt="WhatsApp" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
