@@ -1,17 +1,30 @@
+.d {
+  padding: 10px 40px 0;
+  @media (max-width: 1337px) {
+    padding: 10px 28px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 16px 0;
+  }
+}
 .hero {
   background-image: url('/hero-background.jpg');
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 1840px;
+  border-radius: 12px;
+  margin: 0 auto;
   max-height: 800px;
   height: 100vh;
+  min-height: 460px;
 
   @media (max-width: 768px) {
-    max-height: 80vh;
+    height: 80vh;
+    max-height: 700px;
   }
 
   @media (max-width: 425px) {
-    max-height: 60vh;
+    max-height: 70vh;
   }
 }
 
